@@ -1,4 +1,5 @@
-def fizzBuzz(self, n: int) -> List[str]:
+class Solution:
+    def fizzBuzz(self, n: int) -> List[str]:
         lists = []
     
         for i in range(1, n+1):
@@ -10,4 +11,4 @@ def fizzBuzz(self, n: int) -> List[str]:
                 lists.append('Buzz')
             else: 
                 lists.append(str(i))
-        return lists  
+        return lists    
