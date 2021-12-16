@@ -16,23 +16,18 @@ import sys
 
 def insertionSort1(n, arr):
     # Write your code here
-    i = n-1
-    j = arr[n-1]
-    strs = ''
+    unsorted = arr[-1]
     for i in range(n-1, -1, -1):
-        if j < arr[i-1] and i != 0:
+        if unsorted < arr[i-1] and i!=0:
             arr[i] = arr[i-1]
-            for i in range(len(arr)):
-                strs += str(arr[i])+' '
-            print(strs)
-            strs = ''
+            print(*arr)
             i-=1
+        
         else:
-            arr[i] = j
-            for i in range(len(arr)):
-                strs += str(arr[i])+' '
-            print(strs)
+            arr[i] = unsorted
+            print(*arr)
             break
+        
 
         
 if __name__ == '__main__':
