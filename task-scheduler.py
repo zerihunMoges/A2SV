@@ -10,9 +10,6 @@ class Solution:
 
         space = 0
         i=0
-        print(frequency[0])
-        print(frequency)
-        print(len(tasks))
         while i < len(frequency) and n != 0:
             space += (frequency[i]-1)*n
             minspace = space//n 
@@ -22,6 +19,6 @@ class Solution:
                     space -= minspace  + (frequency[i] - minspace -1)*n
                 else: space -= frequency[i]
                 i += 1
-                print(space)
+               
         space = max(space, 0)
         return int(space + len(tasks))
