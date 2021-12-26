@@ -1,3 +1,4 @@
+#Big O of O(n) solution even though there are two loops nested they both increment the same counter
 class Solution:
     def leastInterval(self, tasks: List[str], n: int) -> int:
         frequency = []
