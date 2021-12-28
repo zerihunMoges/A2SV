@@ -11,11 +11,12 @@ class Solution:
                 stack.append(nums2[i])
             else:
                 stack.append(nums2[i])
-        for i in stack:
-            next_greater[i] = -1
             
 
         for i in range(len(nums1)):
-            nums1[i] = next_greater[nums1[i]]
+            try:
+                nums1[i] = next_greater[nums1[i]]
+            except:
+                nums1[i] = -1
 
         return nums1
