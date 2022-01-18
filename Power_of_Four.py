@@ -4,7 +4,7 @@ class Solution:
         if n==1:
             return True
         
-        elif n < 1:
+        elif n < 4:
             return False
         
         else:
