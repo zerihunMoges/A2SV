@@ -1,1 +1,1 @@
-# SOLUTIONS OF QUESTIONS for competitive programming
+# SOLUTIONS OF QUESTIONS, competitive programming
